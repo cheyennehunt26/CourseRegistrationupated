@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout2"
+    android:background="#7ED3CA"
+    android:backgroundTint="#DCD0F8"
+    android:layout_width="400dp"
+    android:layout_height="350dp">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/cource"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/roll_no"
+        app:layout_constraintStart_toStartOf="@+id/roll_no"
+        app:layout_constraintTop_toBottomOf="@+id/roll_no" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/roll_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Roll Number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name of student" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/cource"
+        app:layout_constraintStart_toStartOf="@+id/cource"
+        app:layout_constraintTop_toBottomOf="@+id/cource" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
